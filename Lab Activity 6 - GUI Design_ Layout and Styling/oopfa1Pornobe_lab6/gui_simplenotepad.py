@@ -80,6 +80,10 @@ class Notepad(QWidget):
             self.clearbtn = QPushButton("Clear")
             self.clearbtn.clicked.connect(self.cleartext)
             self.initUI()
+            self.setLayout(self.layout)
+            windowLayout = QVBoxLayout()
+            windowLayout.addWidget(self.horizontalGroupBox)
+            self.show
     
     def initUI(self):
             self.horizontalGroupBox = QGroupBox("Grid")
